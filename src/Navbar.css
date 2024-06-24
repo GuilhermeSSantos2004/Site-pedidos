@@ -1,0 +1,64 @@
+/* src/Navbar.css */
+
+.navbar {
+  background-color: #ffffff;
+  padding: 0.5rem; /* Ajuste o padding conforme necessário */
+  height: 60px; /* Ajuste a altura conforme necessário */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  color: #ffffff;
+  font-size: 2.0rem;
+  font-weight: 500;
+  background-color: #646464;
+  padding: 0.5rem;
+  border-radius: 4dvh;
+  margin-left: 50px;
+  
+}
+
+
+
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 5rem; /* Ajuste o espaçamento entre os itens conforme necessário */
+  flex-grow: 0.1; /* Permitir que a lista cresça */
+}
+
+.navbar-links li {
+  margin-right: 0px; /* Pode ser removido se 'gap' for suficiente */
+}
+
+.navbar-links a {
+  color: rgb(71, 71, 71);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500; /* Corrigi a propriedade para um valor numérico */
+}
+
+.navbar-links a:hover {
+  color: #000000;
+}
+
+/* Media query para telas menores que 768px */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #5c5c5c;
+    padding: 0.5rem; /* Ajuste o padding conforme necessário */
+    height: auto; /* Altura automática para acomodar o conteúdo */
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+}

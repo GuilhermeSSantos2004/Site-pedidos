@@ -1,0 +1,55 @@
+/* src/PieSection.css */
+.pieSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; 
+  height: 60vh; /* Altura maior para permitir scroll */
+}
+
+.pieSection__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 900px;
+  width: 100%;
+}
+
+.pieSection__image {
+  flex: 1;
+  padding-right: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+.pieSection__image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.pieSection__text {
+  flex: 1;
+}
+
+.pieSection__text h2 {
+  font-size: 49px;
+  margin-bottom: 10px;
+}
+
+.pieSection__text p {
+  font-size: 20px;
+  color: #252525;
+  margin-bottom: 15px;
+}
+
+.pieSection__text .btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pieSection__text .btn:hover {
+  background-color: #0056b3;
+}

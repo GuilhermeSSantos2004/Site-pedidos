@@ -1,0 +1,119 @@
+/* src/App.css */
+
+.App-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Alinhar os itens no topo */
+  padding: 20px;
+}
+
+.App-header {
+  text-align: left; /* Alinha o título à esquerda */
+  max-width: 50%; /* Limita a largura do título */
+}
+
+.header-title {
+  font-size: 4rem; /* Ajuste o tamanho do título principal */
+  margin-bottom: 10px; /* Reduzi o espaço abaixo do título principal */
+  margin-top: 20px; /* Espaçamento acima do título principal */
+  white-space: pre-wrap; /* Mantém as quebras de linha */
+  margin-left: 10px; /* Espaçamento à esquerda do botão */
+}
+
+.header-subtitle {
+  font-size: 1.5rem; /* Tamanho do subtítulo */
+  color: #666; /* Cor do subtítulo */
+  margin-top: 5px; /* Espaçamento acima do subtítulo */
+  margin-bottom: 40px; /* Reduzi o espaço abaixo do título principal */
+  margin-left: 10px; /* Espaçamento à esquerda do botão */
+}
+
+.carousel-container {
+  flex: 1; /* Ocupa o espaço restante */
+  display: flex;
+  justify-content: flex-end; /* Alinha o carrossel no lado direito */
+  margin-left: 20px; /* Espaçamento entre o carrossel e o texto */
+}
+
+/* src/App.css */
+
+.carousel-container {
+  position: relative;
+  flex: 1; /* Ocupa o espaço restante */
+  display: flex;
+  justify-content: flex-end; /* Alinha o carrossel no lado direito */
+  margin-left: 20px; /* Espaçamento entre o carrossel e o texto */
+  overflow: hidden; /* Esconde o conteúdo do pseudo-elemento fora da caixa do contêiner */
+}
+
+.carousel-image {
+  max-width: 100%; /* Ajuste o tamanho da imagem conforme necessário */
+  height: auto;
+  max-height: 550px; /* Altura máxima da imagem no carrossel */
+  border-radius: 5%; /* Deixa a imagem redonda */
+  position: relative;
+  z-index: 1; /* Coloca a imagem acima do pseudo-elemento */
+  transition: transform 0.5s ease; /* Adiciona uma transição suave */
+}
+
+.carousel-image:hover {
+  transform: scale(1.1); /* Aumenta um pouco o tamanho da imagem no hover */
+}
+
+
+.carousel-container:hover::before {
+  opacity: 1; /* Mostra a sombra no hover */
+}
+
+.square-button {
+  background-color: #3F53D9; /* Cor de fundo azul */
+  color: #fff; /* Cor do texto branco */
+  border: none; /* Remove a borda */
+  padding: 15px 20px; /* Espaçamento interno do botão */
+  font-size: 1rem; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor do mouse como ponteiro */
+  border-radius: 1dvh; /* Remove o arredondamento do botão */
+  margin-left: 10px; /* Espaçamento à esquerda do botão */
+  position: relative;
+  z-index: 2; /* Coloca o botão acima do pseudo-elemento */
+}
+
+.square-button:hover {
+  background-color: #0056b3; /* Cor de fundo azul mais escura no hover */
+  transform: scale(1.2);
+  transition: transform 1.5s ease;
+}
+
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+  .App-content {
+    flex-direction: column; /* Coloca os elementos em coluna em telas menores */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+  }
+
+  .header-title {
+    font-size: 2rem; /* Reduz o tamanho do título principal para telas menores */
+  }
+
+  .header-subtitle {
+    font-size: 1.2rem; /* Reduz o tamanho do subtítulo para telas menores */
+  }
+
+  .carousel-container {
+    order: -1; /* Muda a ordem do carrossel para o topo em telas menores */
+    justify-content: center; /* Centraliza o carrossel em telas menores */
+    margin-top: 20px; /* Espaçamento entre o título e o carrossel */
+    margin-left: 0; /* Remove a margem à esquerda em telas menores */
+  }
+
+/* src/App.css */
+
+.carousel-image {
+  max-width: 100%; /* Ajuste o tamanho da imagem conforme necessário */
+  height: auto;
+  max-height: 550px; /* Altura máxima da imagem no carrossel */
+  border-radius: 50%; /* Deixa a imagem redonda */
+}
+
+}
