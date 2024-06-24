@@ -1,13 +1,27 @@
 /* src/Navbar.css */
 
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: #ffffff;
-  padding: 0.5rem; /* Ajuste o padding conforme necessário */
+  padding: 0.6rem; /* Ajuste o padding conforme necessário */
   height: 60px; /* Ajuste a altura conforme necessário */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Garante que o navbar fique acima de outros elementos */
+}
+
+.navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1200px; /* Limita a largura do conteúdo do navbar */
+  margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
 }
 
 .navbar-logo {
@@ -17,18 +31,12 @@
   background-color: #646464;
   padding: 0.5rem;
   border-radius: 4dvh;
-  margin-left: 50px;
-  
 }
-
-
-
 
 .navbar-links {
   list-style: none;
   display: flex;
-  gap: 5rem; /* Ajuste o espaçamento entre os itens conforme necessário */
-  flex-grow: 0.1; /* Permitir que a lista cresça */
+  gap: 2rem; /* Ajuste o espaçamento entre os itens conforme necessário */
 }
 
 .navbar-links li {
@@ -36,10 +44,10 @@
 }
 
 .navbar-links a {
-  color: rgb(71, 71, 71);
+  color: #474747;
   text-decoration: none;
   font-size: 1.5rem;
-  font-weight: 500; /* Corrigi a propriedade para um valor numérico */
+  font-weight: 500;
 }
 
 .navbar-links a:hover {
@@ -49,16 +57,19 @@
 /* Media query para telas menores que 768px */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #5c5c5c;
     padding: 0.5rem; /* Ajuste o padding conforme necessário */
     height: auto; /* Altura automática para acomodar o conteúdo */
   }
 
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+
   .navbar-links {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
     margin-top: 1rem;
   }
 }

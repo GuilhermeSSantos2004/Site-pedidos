@@ -1,10 +1,12 @@
 /* src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap');
 
 .App-content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start; /* Alinhar os itens no topo */
   padding: 20px;
+  /* margin-top: 6%; */
 }
 
 .App-header {
@@ -13,6 +15,7 @@
 }
 
 .header-title {
+  
   font-size: 4rem; /* Ajuste o tamanho do título principal */
   margin-bottom: 10px; /* Reduzi o espaço abaixo do título principal */
   margin-top: 20px; /* Espaçamento acima do título principal */
@@ -26,6 +29,8 @@
   margin-top: 5px; /* Espaçamento acima do subtítulo */
   margin-bottom: 40px; /* Reduzi o espaço abaixo do título principal */
   margin-left: 10px; /* Espaçamento à esquerda do botão */
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
 }
 
 .carousel-container {

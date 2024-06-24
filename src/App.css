@@ -1,0 +1,9 @@
+.section {
+    padding: 100px 20px; /* Ajuste conforme necessário */
+    /* margin-top: 0%; Ajuste conforme a altura do navbar */
+  }
+  
+  #home, #about, #services {
+    padding-top: 6%; /* Para compensar a altura do navbar fixo */
+  }
+  

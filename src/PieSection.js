@@ -7,11 +7,11 @@ const PieSection = () => {
         <div className="pieSection">
             <div className="pieSection__content">
                 <div className="pieSection__image">
-                <img src={logo} alt="GuitFoods Logo" className="carousel-image" />
+                    <img src={logo} alt="GuitFoods Logo" className="carousel-image" />
                 </div>
                 <div className="pieSection__text">
-                    <h2>As melhores tortas</h2>
-                    <p>Sextou! Vamos comer um torta? Aqui temos as melhores tortas </p>
+                    <h2 className="pieSection__text__h1">As melhores tortas</h2>
+                    <p className="pieSection__text__p">Sextou! Vamos comer uma torta? Aqui temos as melhores tortas.</p>
                     <button className="btn">Realizar pedido</button>
                 </div>
             </div>

@@ -1,23 +1,24 @@
-/* src/PieSection.css */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap');
+
 .pieSection {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px; 
-  height: 60vh; /* Altura maior para permitir scroll */
+  height: 70vh; /* Altura maior para permitir scroll */
 }
 
 .pieSection__content {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  max-width: 900px;
+  max-width: 90%;
   width: 100%;
 }
 
 .pieSection__image {
   flex: 1;
-  padding-right: 20px; /* Espaçamento entre a imagem e o texto */
+  padding-right: 9%; /* Espaçamento entre a imagem e o texto */
 }
 
 .pieSection__image img {
@@ -27,17 +28,21 @@
 
 .pieSection__text {
   flex: 1;
+
 }
 
 .pieSection__text h2 {
   font-size: 49px;
-  margin-bottom: 10px;
+  margin-top: 0px;
+
 }
 
 .pieSection__text p {
   font-size: 20px;
   color: #252525;
-  margin-bottom: 15px;
+  margin-bottom: 10%;
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
 }
 
 .pieSection__text .btn {

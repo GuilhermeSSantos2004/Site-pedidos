@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap');
+
 .info-section {
   display: flex;
   justify-content: space-around;
@@ -37,6 +39,9 @@
 .info-text-sub {
   font-size: 1.2rem; /* Aumenta o tamanho do subtítulo */
   color: #666; /* Subtítulo em cinza claro */
+
+  font-family: "Playwrite AU SA", cursive;
+  font-optical-sizing: auto;
   margin-bottom: 20px; /* Espaçamento maior abaixo do subtítulo */
   text-align: center; /* Centraliza o texto */
   display: -webkit-box;
